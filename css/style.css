@@ -36,7 +36,7 @@ img {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 4%;
-  margin-bottom: 96px;            /* 他はmargin-topで調整するが固定ヘッダー対策でbottomで調整 */
+  margin-bottom: 145px;            /* 他はmargin-topで調整するが固定ヘッダー対策でbottomで調整 */
   padding-top: 90px;              /* 90pxはヘッダーの高さ */
   margin-top: -90px;              /* 90pxはヘッダーの高さ */
 }
@@ -105,7 +105,7 @@ h4 {
   width: 100%;  
   height: calc(100vh - 90px);       /* 90pxはヘッダーの高さ */
   margin-top: 90px;                 /* 90pxはヘッダーの高さ */
-  margin-bottom: 96px;              /* section-wrapperのmargin-bottomと合わせる*/
+  margin-bottom: 96px;
   background-image: url(../img/fv_bg@2x.png);
   background-size: auto 100%;
   background-repeat: repeat-x;
@@ -393,8 +393,9 @@ form {
 ------------------------------------- */
 .section-wrapper { 
   padding: 0;                     /* 写真が左右いっぱいなのでpaddingを解除 */  
-  padding-top: 0;                 /* 以下固定ヘッダー対策を解除 */
-  margin-top: 0;                  /* 以下固定ヘッダー対策を解除 */
+  padding-top: 0;                 /* 固定ヘッダー対策を解除 */
+  margin-top: 0;                  /* 固定ヘッダー対策を解除 */
+  margin-bottom: 100px;
 }
 
 /* header
@@ -497,6 +498,7 @@ form {
 .fv {
   height: calc(100vh - 45px);     /* 45pxはヘッダー高さと揃える */
   margin-top: 0;
+  margin-bottom: 50px;
 }
 
 
@@ -504,6 +506,7 @@ form {
 ------------------------------- */
 .feature-list {
   flex-direction: column;
+  margin-top: 0;
 }
 .card .img-wrapper {
   display: none;
